@@ -1,2 +1,2 @@
 # JAVA-basics
-basic problems solutions will be available here.
+solutions for array problems from website https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
