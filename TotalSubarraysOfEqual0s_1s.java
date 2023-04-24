@@ -52,24 +52,26 @@ public class TotalSubarraysOfEqual0s_1s
 		int totalSubarrays=0;
 		if (s0<s1)
 		{
-			int i=1,subarray=1;
-			while(subarray!=0)
+			int i=1,subarray=1,rem;
+			do
 			{
 		     subarray=s0/i;
+		     rem=s1%i;
 		     i++;
-		     totalSubarrays+=subarray;
-			}
+		     totalSubarrays=totalSubarrays+subarray+rem;
+			}while(subarray!=0);
 		   
 		}
 		else
 		{
-			int i=1,subarray=1;
-			while(subarray!=0)
+			int i=1,subarray=1,rem;
+			do
 			{
 		     subarray=s1/i;
+		     rem=s1%i;
 		     i++;
-		     totalSubarrays+=subarray;
-			}
+		     totalSubarrays=totalSubarrays+subarray+rem;
+			}while(subarray!=0);
 			
 		}
 System.out.println("total subarrays of equal no 0f 0s and 1s: "+totalSubarrays);
